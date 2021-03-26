@@ -1,6 +1,6 @@
 # Skin Titan BINGIE
 
-The new Titan for Kodi Leia...
+The new Titan for Kodi Matrix...
 
 #IMPORTANT NOTE FOR USERS# 
 Install the skin through the official bingie repository for updates and the supported addons required!
