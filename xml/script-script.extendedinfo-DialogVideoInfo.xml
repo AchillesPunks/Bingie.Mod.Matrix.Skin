@@ -750,7 +750,7 @@
                         </control>
                          <control type="image">
                             <posx>1810</posx>
-                            <posy>60</posy>
+                            <posy>85</posy>
                             <width>35</width>
                             <height>150</height>
                             <texture>dialogs/videoinfo/info/arrowright.png</texture>
@@ -803,7 +803,7 @@
                         </control>
                         <control type="image">
                             <posx>1810</posx>
-                            <posy>60</posy>
+                            <posy>85</posy>
                             <width>35</width>
                             <height>150</height>
                             <texture>dialogs/videoinfo/info/arrowright.png</texture>
