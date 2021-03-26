@@ -60,7 +60,7 @@
 	<!-- Variable for sorting out Season or TV Show Landscape -->
 	<variable name="View525SeasonOrShowLandscape">
 		<value condition="!String.IsEmpty(ListItem.Art(season.landscape))">$INFO[ListItem.Art(season.landscape)]</value>
-		<value condition="!String.IsEmpty(ListItem.Art(tvshow.landscape))">$INFO[ListItem.Art(tvshow.landscape)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
 		<value>$INFO[ListItem.Art(tvshow.fanart)]</value>
 	</variable>
 	<!-- Variable for choice between Season Landscape or Poster Try to turn this into a skin property later-->
