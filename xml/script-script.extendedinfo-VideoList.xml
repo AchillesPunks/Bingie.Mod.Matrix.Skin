@@ -10,6 +10,17 @@
             <visible>!Player.HasVideo</visible>
 			<include>GlobalBackground</include>
 			
+			<!-- panel background -->
+			<control type="image">
+				<posy>0</posy>
+				<posx>0</posx>
+				<width>100%</width>
+				<height>100%</height>
+				<texture border="5">diffuse/panel.png</texture>
+				<colordiffuse>$VAR[BingiePanelColor]</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			
 			<control type="label">
 				<posx>61</posx>
 				<posy>10</posy>
