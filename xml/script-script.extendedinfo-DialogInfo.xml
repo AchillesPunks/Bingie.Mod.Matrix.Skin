@@ -9,8 +9,21 @@
 		<control type="group">
 	
 			<include>GlobalBackground</include>
+
+<!-- Background Panel-->
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>100%</width>
+					<height>100%</height>
+					<texture border="5">diffuse/bgpanel.png</texture>
+<colordiffuse>$VAR[BingiePanelColor]</colordiffuse>
+                    <visible>!Skin.HasSetting(DialogVideoInfoHidePanel)</visible>
+					<aspectratio>stretch</aspectratio>
+				</control>
 			
 			<control type="label">
+
                 <!-- actor name -->
 				<include>animation_fade_visible_hidden</include>
 				<posx>61</posx>
@@ -66,18 +79,7 @@
 				
 			<control type="group">
 				<visible>!Window.IsVisible(FileBrowser)</visible>
-				<include>animation_window_open_close</include>
-				
-				<!-- Background Panel-->
-				<control type="image">
-					<posx>50</posx>
-					<posy>210</posy>
-					<width>1820</width>
-					<height>67%</height>
-					<texture border="15">diffuse/bgpanel.png</texture>
-                    <visible>!Skin.HasSetting(DialogVideoInfoHidePanel)</visible>
-					<colordiffuse>$VAR[ViewDetailsPanelColor]</colordiffuse>
-				</control>
+				<include>animation_window_open_close</include>				
 				
 				<control type="group">
 					<!--Info Stuff-->
@@ -85,7 +87,7 @@
 						<posx>0</posx>
 						<bottom>0</bottom>
 						<width>100%</width>
-						<height>110</height>
+						<height>90</height>
 						<texture border="5">diffuse/panel.png</texture>
 						<colordiffuse>$INFO[Skin.String(GeneralPanelsColor)]</colordiffuse>
 					</control>
@@ -178,7 +180,7 @@
                         <control type="button" id="116">
 							<!--actor movie crew-->
 							<label>$ADDON[script.extendedinfo 32122]</label>
-							<width>285</width>
+							<width>300</width>
 							<height>60</height>
 							<align>center</align>
 							<textoffsetx>0</textoffsetx>
@@ -191,7 +193,7 @@
                         <control type="button" id="117">
 							<!--actor tvshow crew-->
 							<label>$ADDON[script.extendedinfo 32123]</label>
-							<width>285</width>
+							<width>330</width>
 							<height>60</height>
 							<align>center</align>
 							<textoffsetx>0</textoffsetx>
@@ -213,19 +215,6 @@
 							<onclick>SetFocus(350)</onclick>
 							<visible>!String.IsEqual(Window.Property(AdditionalInfo),youtube)</visible>
                             <visible>Integer.IsGreater(Container(350).NumItems,0)</visible>
-						</control>
-                        <control type="button" id="119">
-							<!--fanart-->
-							<label>20445</label>
-							<width>285</width>
-							<height>60</height>
-							<align>center</align>
-							<textoffsetx>0</textoffsetx>
-							<onclick>SetProperty(AdditionalInfo, fanart)</onclick>
-                            <onclick>SetProperty(subtitle, $LOCALIZE[20445])</onclick>
-							<onclick>SetFocus(750)</onclick>
-							<visible>!String.IsEqual(Window.Property(AdditionalInfo),fanart)</visible>
-                            <visible>Integer.IsGreater(Container(750).NumItems,0)</visible>
 						</control>
                         <control type="button" id="120">
 							<!--artwork-->
@@ -257,7 +246,7 @@
 						<control type="image">
 							<animation effect="fade" start="100" end="50" tween="sine" easing="inout" time="800" pulse="true" reversible="false" condition="true">Conditional</animation>
 							<left>1880</left>
-							<bottom>20</bottom>
+							<bottom>16</bottom>
 							<posy>50</posy>
 							<width>20</width>
 							<height>60</height>
@@ -270,7 +259,7 @@
 						<control type="image">
 							<animation effect="fade" start="100" end="50" tween="sine" easing="inout" time="800" pulse="true" reversible="false" condition="true">Conditional</animation>
 							<left>35</left>
-							<bottom>20</bottom>
+							<bottom>16</bottom>
 							<posy>50</posy>
 							<width>20</width>
 							<height>60</height>
@@ -287,7 +276,7 @@
 						<!--Info-->
 						<control type="grouplist">
 							<posx>65</posx>
-							<posy>230</posy>
+							<posy>210</posy>
 							<width>1200</width>
 							<height>700</height>
 							<orientation>vertical</orientation>
@@ -435,7 +424,7 @@
                         <!-- local media -->
                         <control type="panel" id="140">
                             <posx>63</posx>
-							<posy>220</posy>
+							<posy>202</posy>
 							<width>1200</width>
 							<height>714</height>
 							<ondown>9000</ondown>
@@ -466,7 +455,7 @@
                         <!-- actor movies -->
                         <control type="panel" id="150">
                             <posx>63</posx>
-							<posy>220</posy>
+							<posy>202</posy>
 							<width>1200</width>
 							<height>714</height>
 							<ondown>9000</ondown>
@@ -480,15 +469,15 @@
                             <visible allowhiddenfocus="true">String.IsEqual(Window.Property(AdditionalInfo),actormovies)</visible>
                             <itemlayout height="357" width="240">
                                 <control type="group">
-                                    <width>233</width>
-                                    <height>342</height>
+                                    <width>232</width>
+                                    <height>322</height>
                                     <include>PosterPanelLayout</include>
                                   </control>
                             </itemlayout>
                             <focusedlayout height="357" width="240">
                                 <control type="group">
-                                    <width>233</width>
-                                    <height>342</height>
+                                    <width>232</width>
+                                    <height>322</height>
                                     <include>PosterPanelLayoutFocus</include>
                                   </control>
                             </focusedlayout>
@@ -496,7 +485,7 @@
                                          <!-- actor shows -->
                         <control type="panel" id="250">
                             <posx>63</posx>
-							<posy>220</posy>
+							<posy>202</posy>
 							<width>1200</width>
 							<height>714</height>
 							<ondown>9000</ondown>
@@ -510,15 +499,15 @@
                             <visible allowhiddenfocus="true">String.IsEqual(Window.Property(AdditionalInfo),actorshows)</visible>
                             <itemlayout height="357" width="240">
                                 <control type="group">
-                                    <width>233</width>
-                                    <height>342</height>
+                                    <width>232</width>
+                                    <height>322</height>
                                     <include>PosterPanelLayout</include>
                                   </control>
                             </itemlayout>
                             <focusedlayout height="357" width="240">
                                 <control type="group">
-                                    <width>233</width>
-                                    <height>342</height>
+                                    <width>232</width>
+                                    <height>322</height>
                                     <include>PosterPanelLayoutFocus</include>
                                   </control>
                             </focusedlayout>
@@ -526,7 +515,7 @@
                                           <!-- actor movie crew -->
                         <control type="panel" id="550">
                             <posx>63</posx>
-							<posy>220</posy>
+							<posy>202</posy>
 							<width>1200</width>
 							<height>714</height>
 							<ondown>9000</ondown>
@@ -540,15 +529,15 @@
                             <visible allowhiddenfocus="true">String.IsEqual(Window.Property(AdditionalInfo),actorcrew)</visible>
                             <itemlayout height="357" width="240">
                                 <control type="group">
-                                    <width>233</width>
-                                    <height>342</height>
+                                    <width>232</width>
+                                    <height>322</height>
                                     <include>PosterPanelLayout</include>
                                   </control>
                             </itemlayout>
                             <focusedlayout height="357" width="240">
                                 <control type="group">
-                                    <width>233</width>
-                                    <height>342</height>
+                                    <width>232</width>
+                                    <height>322</height>
                                     <include>PosterPanelLayoutFocus</include>
                                   </control>
                             </focusedlayout>
@@ -556,7 +545,7 @@
                                           <!-- actor tv crew -->
                         <control type="panel" id="650">
                             <posx>63</posx>
-							<posy>220</posy>
+							<posy>202</posy>
 							<width>1200</width>
 							<height>714</height>
 							<ondown>9000</ondown>
@@ -570,15 +559,15 @@
                             <visible allowhiddenfocus="true">String.IsEqual(Window.Property(AdditionalInfo),actortvcrew)</visible>
                             <itemlayout height="357" width="240">
                                 <control type="group">
-                                    <width>233</width>
-                                    <height>342</height>
+                                    <width>232</width>
+                                    <height>322</height>
                                     <include>PosterPanelLayout</include>
                                   </control>
                             </itemlayout>
                             <focusedlayout height="357" width="240">
                                 <control type="group">
-                                    <width>233</width>
-                                    <height>342</height>
+                                    <width>232</width>
+                                    <height>322</height>
                                     <include>PosterPanelLayoutFocus</include>
                                   </control>
                             </focusedlayout>
@@ -586,7 +575,7 @@
                                          <!-- youtube videos -->
                         <control type="panel" id="350">
                             <posx>63</posx>
-							<posy>220</posy>
+							<posy>202</posy>
 							<width>1200</width>
 							<height>714</height>
 							<ondown>9000</ondown>
@@ -613,40 +602,10 @@
                                 </control>
 							</focusedlayout>
                         </control>
-                                          <!-- fanart -->
-                        <control type="panel" id="750">
-                            <posx>63</posx>
-							<posy>220</posy>
-							<width>1200</width>
-							<height>714</height>
-							<ondown>9000</ondown>
-							<onleft>ClearProperty(AdditionalInfo)</onleft>
-							<onback>ClearProperty(AdditionalInfo)</onback>
-							<onleft>SetFocus(9000)</onleft>
-							<scrolltime>200</scrolltime>
-							<orientation>vertical</orientation>
-							<focusposition>0</focusposition>
-							<viewtype label="actor list">list</viewtype>
-                            <visible allowhiddenfocus="true">String.IsEqual(Window.Property(AdditionalInfo),fanart)</visible>
-                            <itemlayout width="400" height="238">
-								<control type="group">
-                                    <width>95%</width>
-                                    <height>95%</height>
-                                    <include>ThumbsViewLayout</include>
-                                </control>
-							</itemlayout>
-							<focusedlayout width="400" height="238">
-								<control type="group">
-                                    <width>95%</width>
-                                    <height>95%</height>
-                                    <include>ThumbsViewLayoutFocus</include>
-                                </control>
-							</focusedlayout>
-                        </control>
                                           <!-- posters -->
                         <control type="panel" id="450">
                             <posx>63</posx>
-							<posy>220</posy>
+							<posy>202</posy>
 							<width>1200</width>
 							<height>714</height>
 							<ondown>9000</ondown>
@@ -660,15 +619,15 @@
                             <visible allowhiddenfocus="true">String.IsEqual(Window.Property(AdditionalInfo),posters)</visible>
                             <itemlayout height="357" width="240">
                                 <control type="group">
-                                    <width>233</width>
-                                    <height>342</height>
+                                    <width>232</width>
+                                    <height>322</height>
                                     <include>PosterPanelLayout</include>
                                   </control>
                             </itemlayout>
                             <focusedlayout height="357" width="240">
                                 <control type="group">
-                                    <width>233</width>
-                                    <height>342</height>
+                                    <width>232</width>
+                                    <height>322</height>
                                     <include>PosterPanelLayoutFocus</include>
                                   </control>
                             </focusedlayout>
