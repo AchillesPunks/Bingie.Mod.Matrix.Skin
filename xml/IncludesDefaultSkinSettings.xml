@@ -77,8 +77,7 @@
 	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(View525_HidePanel)</onload>
 	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(View59_DetailsShowFanart)</onload>
 	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(UseBingieOSD)</onload>
-	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(EnableOSDInfoBingie)</onload>
-	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetString(NoFooterBar)</onload>
+	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(EnableOSDInfoBingie)</onload>	
 	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(DisableNowPlayingClock)</onload>
 	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(DisableHeader)</onload>
 	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(EnableBufferingProgressOSD)</onload>
@@ -88,11 +87,8 @@
 	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(HideWidgetPanelBackground)</onload>
 	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetString(AutoYoutubeTrailer,true)</onload>
 	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(EnableFixedFocusWidgets)</onload>
-	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetString(EnableFixedFrameWidgets)</onload>
 	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(ShowInformationBypass)</onload>
-	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(PreferTvShowThumbWidget)</onload>
-	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetString(EnableMonochromeRatingInBingieViews)</onload>
-	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetString(BingieViewsDisableRating)</onload>
+	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(PreferTvShowThumbWidget)</onload>	
 	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(DisableMediaCodecInfoInHome)</onload>
 	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(LockHubWidgets)</onload>
 	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(AllowTVShowsTrailer)</onload>
@@ -104,7 +100,6 @@
 	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(DisableNowPlayingInfoBar)</onload>
 	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(UseBingieInfoDialog)</onload>
 	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(DisableLogoMainMenu)</onload>
-	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetString(BingieViewsDisableStudio)</onload>
 	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(NextUpNotificationSlim)</onload>
 	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(ForceVideoPlaybackStop)</onload>
 	<onload condition="!Skin.HasSetting(HomeMenuDefaults46)">Skin.SetBool(AutoCloseVideoOSD)</onload>
